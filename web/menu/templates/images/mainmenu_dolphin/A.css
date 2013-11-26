@@ -1,0 +1,60 @@
+#menumain{
+   margin:0;
+   white-space:nowrap;
+   overflow:hidden;
+   height:33px;
+}
+
+#menumain .mainmenuiner {
+    height:33px;
+	padding:0;
+    line-height:33px;
+    overflow: hidden;
+    margin:0px; 
+}
+
+.menuleft{
+   display:block;
+   float:left;
+   height:33px;
+   text-decoration: none;
+   text-align:center;
+   width:9px;
+   margin:0px;
+}
+
+.menuright{
+   display:block;
+   float:right;
+   height:33px;
+   text-decoration: none;
+   text-align:center;
+   width:9px;
+   margin:0px;
+}
+
+#menumain a.menumain:link,#menumain a.menumain:active,#menumain a.menumain:visited{
+   display:block;
+   float:left;
+   height:33px;
+   text-decoration: none;
+   text-align:center;
+   width:95px;
+   color:#998e7c;
+   font:14px/26px 'SimSun',Arial,Sans-Serif;
+   background:url(menu.png) 0px 0px no-repeat;
+   margin:0px;
+}
+
+#menumain a.menumain:hover{
+   display:block;
+   float:left;
+   height:33px;
+   color:#d3cdc4; 
+   text-decoration: none;
+   text-align:center;
+   width:95px;
+   font:14px/26px 'SimSun',Arial,Sans-Serif;
+   margin:0px;
+   background:url(menunow.png) 0px 0px no-repeat;
+} 

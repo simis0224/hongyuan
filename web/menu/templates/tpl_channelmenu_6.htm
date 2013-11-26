@@ -1,0 +1,22 @@
+<!-start->
+<link href="images/channelmenu_6/{#tempcolor#}.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="{#CP#}js/channelmenu_6.js"></script>
+<div id="channelmenu">
+	<div class="menuleft"></div>
+<!-start-> 
+
+<!-menu->
+	<a href="{#menuurl#}" target="{#target#}" class="channelmenu_main" id="channelmenu_main_{#n#}" onMouseOver="showSubMenu('channelmenu_main','channelmenu_sub',{#n#})">{#menu#}</a>
+<!-menu->
+
+<!-list->
+<li><a href="{#menuurl#}" target="{#target#}">{#menu#}</a></li> 
+<!-list->
+
+<!-end-> 
+</div>
+<div id="channelmenu_sub">{#smenustr#}
+	<div id="twomenuright" style="display:none;height:33px;width:21px;background:url(images/channelmenu_6/twomenu.gif) -879px 0px no-repeat;"></div>
+</div>
+<script>initSubMenu('channelmenu_main','channelmenu_sub',{#m#});</script>
+<!-end->

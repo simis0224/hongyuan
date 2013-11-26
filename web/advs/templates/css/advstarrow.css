@@ -1,0 +1,104 @@
+
+#tarrow_container {
+	width:900px;
+	padding:10px;
+	margin:0 auto;
+	position:relative;
+	z-index:0;
+}
+
+#tarrow_example {
+	width:920px;
+	height:380px;
+	position:relative;
+}
+
+#tarrow_ribbon {
+	position:absolute;
+	top:-3px;
+	left:-15px;
+	z-index:500;
+}
+
+#tarrow_frame {
+	position:absolute;
+	z-index:0;
+	width:1002px;
+	height:371px;
+	top:-3px;
+	left:-52px;
+}
+
+
+#tarrow_slides {
+	position:absolute;
+	top:15px;
+	left:4px;
+	z-index:100;
+}
+
+
+.slides_container {
+	width:890px;
+	overflow:hidden;
+	position:relative;
+	display:none;
+}
+
+.slides_container a {
+	width:890px;
+	height:300px;
+	border:0;
+	display:block;
+}
+
+.slides_container a img {
+	display:block;
+	border:0;
+}
+
+#tarrow_slides .next,#tarrow_slides .prev {
+	position:absolute;
+	top:125px;
+	left:-39px;
+	width:24px;
+	height:43px;
+	display:block;
+	z-index:101;
+	border:0;
+}
+
+#tarrow_slides .next {
+	left:905px;
+}
+
+
+.pagination {
+	margin:26px auto 0;
+	width:100px;
+}
+
+.pagination li {
+	float:left;
+	margin:0 1px;
+	list-style:none;
+	border:0;
+}
+
+.pagination li a {
+	display:block;
+	width:12px;
+	height:0;
+	border:0;
+	padding-top:12px;
+	background-image:url(../images/tarrow-pagination.png);
+	background-position:0 0;
+	float:left;
+	overflow:hidden;
+}
+
+.pagination li.current a {
+	background-position:0 -12px;
+	border:0;
+}
+

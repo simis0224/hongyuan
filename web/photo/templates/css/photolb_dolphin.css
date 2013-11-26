@@ -1,0 +1,45 @@
+/* ============Í¼Æ¬ÁÐ±í============== */
+ul.photolb_dolphin{
+margin:0;
+padding:0;
+}
+
+ul.photolb_dolphin li{
+list-style-type: none;
+margin:0px 5px 5px 0px;
+text-align:center;
+float:left;
+}
+
+ul.photolb_dolphin div.fang{
+border:0px #ddd solid;
+background: #fff;
+padding:0px;
+text-align:center;
+}
+
+ul.photolb_dolphin div.picFit{
+overflow: hidden;
+}
+
+ul.photolb_dolphin div.picFit img{
+}
+
+
+ul.photolb_dolphin div.title{
+text-align:center;
+overflow: hidden;
+white-space:nowrap;
+}
+
+ul.photolb_dolphin a.title:link,ul.photolb_dolphin a.title:visited,ul.photolb_dolphin a.title:active{
+color:#555;
+font:12px/25px simsun;
+text-decoration: none;
+}
+
+ul.photolb_dolphin a.title:hover{
+color:#ff0000;
+text-decoration: underline;
+font:12px/25px simsun;
+}

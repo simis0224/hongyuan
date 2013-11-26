@@ -1,0 +1,119 @@
+.productlistx a:link {
+	color: #432121;
+	text-decoration: none;
+	font-size: 12px;
+}
+
+.productlistx a:visited {
+	text-decoration: none;
+	color: #000000;
+}
+
+.productlistx a:hover {
+	color: #666666;
+}
+
+.productlistx a:active {
+    color: #666666;
+	text-decoration: none;
+}
+
+.productlistx {
+	visibility:visible;
+	margin:0px;
+	padding:0px;
+	position: relative;
+	font-family: "Lucida Grande", Helvetica, Arial, sans-serif;
+	color: #000000;
+	font-size: 12px;
+	overflow: hidden;
+	width:100%;
+}
+
+.rollproductlists {
+	margin:0px;
+	padding:0px;
+	overflow:hidden;
+	width:100%;
+}
+
+.blkproductlistx {
+	border:0px; 
+	padding:0px; 
+	overflow: hidden;
+	ZOOM: 1; 
+	position: relative;
+}
+
+.blkproductlistx .LeftButton {
+	background: url(../images/roll.jpg) no-repeat 0px 0px;
+	left:1px;
+	float:left;
+	width:16px;
+	cursor: pointer;
+	position: absolute;
+	height:164px;
+	top:0px;
+}
+
+.blkproductlistx .RightButton {
+	background: url(../images/roll.jpg) no-repeat -16px 0px;
+	right:1px;
+	float:right;
+	width:16px;
+	cursor: pointer;
+	position: absolute;
+	height:164px;
+	top:0px;
+}
+
+.blkproductlistx .Cont {
+	padding:0px;
+	margin:0px 0px 0px 21px; 
+	text-align:center;
+	overflow: hidden;
+}
+
+.blkproductlistx .box {
+	float:left;
+	text-align:center;
+	margin:0px;
+	padding:0px;
+	width:189px;
+}
+
+.box .fang{
+	padding:0px;
+	margin:0px;
+	text-align:center;
+	border-top:5px #353535 solid;
+	border-left:5px #353535 solid;
+	border-right:5px #353535 solid;
+}
+
+.box .picFit{
+	overflow:hidden;
+}
+
+.blkproductlistx .box img {
+}
+
+div.box div.title{
+text-align:center;
+overflow: hidden;
+white-space:nowrap;
+background:#353535;
+width:180px;
+}
+
+div.title a:link,div.title a:visited,div.title a:active{
+color:#808080;
+font:12px/31px SimSun,Arial,Sans-Serif;
+text-decoration: none;
+}
+
+div.title a:hover{
+color:#808080;
+text-decoration: underline;
+font:12px/31px SimSun,Arial,Sans-Serif;
+}
