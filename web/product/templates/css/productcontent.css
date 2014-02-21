@@ -10,12 +10,12 @@ padding:0px 0 40px 0;
 div#productcontent .productpics{
 float:left;
 width:330px;
-height:268px;
+height:330px;
 }
 
 div#productcontent .piczone{
 width:305px;
-height:260px;
+height:305px;
 text-align: center;
 padding:5px;
 background:#fff;
@@ -42,7 +42,6 @@ border:0px;
 div#productcontent #prodtitle{
 margin:0px 0px 20px 0px;
 text-align: left;
-height:28px;
 font:bold 14px/28px Verdana, Arial, Helvetica, sans-serif;
 background:#f5f5f5;
 padding-left:10px;
