@@ -66,6 +66,11 @@ function NewUploadImage($jpg,$jpg_type,$jpg_size,$path){
 			$extention = ".jpg";
 			$UploadImage[2]="gif";
 			break;
+			
+			case "image/jpeg" : 
+			$extention = ".jpg";
+			$UploadImage[2]="gif";
+			break;
 
 			case "image/gif" : 
 			$extention = ".gif";

@@ -2,7 +2,7 @@
 
 
 
-///////////�ϴ�ͼƬ��FLASH����
+///////////ÉÏ´«Í¼Æ¬»òFLASHº¯Êý
 
 function NewUploadImage($jpg,$jpg_type,$jpg_size,$path){
 
@@ -32,7 +32,7 @@ function NewUploadImage($jpg,$jpg_type,$jpg_size,$path){
 			$UploadImage[2]="gif";
 			break;
 
-                        case "image/jpeg" : 
+            case "image/jpeg" : 
 			$extention = ".jpg";
 			$UploadImage[2]="gif";
 			break;
@@ -99,6 +99,11 @@ function NewUploadImage1($jpg,$jpg_type,$jpg_size,$path){
 	switch ($jpg_type) {
 
 			case "image/pjpeg" : 
+			$extention = ".jpg";
+			$UploadImage[2]="gif";
+			break;
+			
+			case "image/jpeg" : 
 			$extention = ".jpg";
 			$UploadImage[2]="gif";
 			break;

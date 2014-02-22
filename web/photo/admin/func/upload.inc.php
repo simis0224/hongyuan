@@ -25,7 +25,7 @@ function NewUploadImage($jpg,$jpg_type,$jpg_size,$path){
 
 	if ($jpg_type != "image/pjpeg" && $jpg_type != "image/jpeg" && $jpg_type!= "image/gif" && $jpg_type != "image/x-png" && $jpg_type != "application/x-shockwave-flash") {
 			$arr[0]="err";
-			$arr[1]=$strUploadNotice3;
+			$arr[1]=$strUploadNotice3 ;
 			return $arr;
 	}
 		
