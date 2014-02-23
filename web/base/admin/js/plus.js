@@ -233,6 +233,45 @@ $(document).ready(function(){
 	};
 })(jQuery);
 
+(function($) {
+	$.fn.colorToHex = function(color) {
+		if(!color) {
+			return '#ffffff';
+		}
+	    if (color.substr(0, 1) === '#') {
+	        return color;
+	    }
+	    var digits = /(.*?)rgb\((\d+), (\d+), (\d+)\)/.exec(color);
+
+	    var red = parseInt(digits[2]);
+	    var green = parseInt(digits[3]);
+	    var blue = parseInt(digits[4]);
+
+	    var rgb = blue | (green << 8) | (red << 16);
+	    return digits[1] + '#' + rgb.toString(16);
+	};
+})(jQuery);
+
+
+
+//Function to convert hex format to a rgb color
+(function($) {
+  $.fn.rgb2hex = function(rgb) {
+	if(!rgb) {
+	  return '#ffffff';
+	}
+    rgb = rgb.match(/^rgb\((\d+),\s*(\d+),\s*(\d+)\)$/);
+    return "#" + $().hex(rgb[1]) + $().hex(rgb[2]) + $().hex(rgb[3]);
+  };
+})(jQuery);
+
+(function($) {
+  $.fn.hex = function(x) {
+    var hexDigits = new Array ("0","1","2","3","4","5","6","7","8","9","a","b","c","d","e","f");
+    return isNaN(x) ? "00" : hexDigits[(x - x % 16) / 16] + hexDigits[x % 16];
+  };
+})(jQuery);
+
 //边框预览
 (function($){
 
@@ -240,7 +279,7 @@ $(document).ready(function(){
 		var borderid=$("#showborders")[0].value;
 		var coltitle=$("#coltitle")[0].value;
 		var borderwidth=$("#borderwidth")[0].value;
-		var borderstyle=$("#borderstyle")[0].value;
+		var borderstyle=$("#borderstyle")[0].value;		
 		var bordercolor=$("#bordercolor")[0].value;
 		var backgroundcolor=$("#backgroundcolor")[0].value;
 		var showbar=$("#showbar")[0].value;
@@ -292,8 +331,8 @@ $(document).ready(function(){
 		$("#colorSelector").show();
 		obj=this.id;
 		$(".colortd").click(function (){
-			$("#"+obj)[0].style.backgroundColor=this.style.backgroundColor;
-			$("#"+obj)[0].value=this.style.backgroundColor;
+			$("#"+obj)[0].style.backgroundColor=$().rgb2hex(this.style.backgroundColor);
+			$("#"+obj)[0].value=$().rgb2hex(this.style.backgroundColor);
 			$("#colorSelector").hide();
 			$().previewBorder();
 			return false;
@@ -308,7 +347,7 @@ $(document).ready(function(){
 		}
 		catch(e){}
 		
-		if(this.style.backgroundColor==this.value){
+		if($().rgb2hex(this.style.backgroundColor)==this.value){
 			$().previewBorder();
 		}else{
 			this.value=this.style.backgroundColor;
