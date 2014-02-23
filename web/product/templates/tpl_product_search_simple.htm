@@ -1,10 +1,20 @@
 <script language="javascript" src="{#CP#}js/searchform.js"></script>
 <link href="css/searchform_simple.css" rel="stylesheet" type="text/css" />
 <form id="searchform_product_simple" method="get" action="{#CP#}class/index.php">
-   <div class="searchform_product_simple">
-    <input name="key" type="text" id="searchform_product_key" value="{#key#}" class="input">
-  </div>
-  <div class="probutton">
-  <input name="imageField" id="button" type="image" src="images/go.jpg" border="0">
-  </div>
+  <table>
+    <tr>
+      <td class="icon_column">
+        <image src="images/lense-icon.png"/>
+      </td>
+      <td class="search_column">
+        <h1 class="search_header">商品快速搜索</h1>
+        <div class="searchform_product_simple">
+          <input name="key" type="text" id="searchform_product_key" value="{#key#}" class="input">
+        </div>
+        <div class="probutton">
+          <button name="imageField" id="button" type="submit" border="0">搜索</button>
+        </div>
+      </td>
+    </tr>
+  </table>
 </form>
