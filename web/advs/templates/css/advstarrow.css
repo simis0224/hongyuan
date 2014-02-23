@@ -1,15 +1,13 @@
 
 #tarrow_container {
-	width:900px;
-	padding:10px;
 	margin:0 auto;
 	position:relative;
 	z-index:0;
 }
 
 #tarrow_example {
-	width:920px;
-	height:380px;
+	width:1002px;
+	height:420px;
 	position:relative;
 }
 
@@ -33,28 +31,32 @@
 #tarrow_slides {
 	position:absolute;
 	top:15px;
-	left:4px;
 	z-index:100;
 }
 
 
 .slides_container {
-	width:890px;
+	width:1002px;
 	overflow:hidden;
 	position:relative;
 	display:none;
 }
 
 .slides_container a {
-	width:890px;
-	height:300px;
+	width:1002px;
+	height:352px;
 	border:0;
 	display:block;
 }
 
 .slides_container a img {
 	display:block;
-	border:0;
+	border: 1px solid #BFBFBF;
+	padding: 10px;
+}
+
+.slides_container a img:hover {
+	border: 1px solid #BFBFBF;
 }
 
 #tarrow_slides .next,#tarrow_slides .prev {
