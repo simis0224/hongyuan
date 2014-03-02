@@ -1,17 +1,16 @@
 /* ============产品图片列表============== */
 
 div#productquery{
-margin:0px 15px 5px 15px;
+margin: 0;
 float:left;
-width: 45%;
-overflow: hidden;
-white-space: nowrap;
-text-overflow: ellipsis;
+width: 179px;
+height: 240px;
+border: 1px solid #bfbfbf;
+padding:10px;
 }
 
 div#productquery div.fang{
-padding:3px;
-border:1px #b1b1b1 solid;
+margin-bottom: 12px;
 }
 
 div#productquery div.picFit{
@@ -30,14 +29,13 @@ white-space:nowrap;
 
 div#productquery a:link,div#productquery a:visited,div#productquery a:active{
 color:#000;
-font:12px/35px arial,simsun;
 text-decoration: none;
+line-height: 1.5;
 }
 
 div#productquery a:hover{
-color:#ff0000;
-text-decoration: underline;
-font:12px/35px arial,simsun;
+line-height: 1.5;
+color:#B60F0F;
 }
 
 
@@ -58,12 +56,14 @@ div#pagesinfo {
 float:left;
 padding:3px 8px;
 white-space: nowrap;
+margin-top: 10px;
 }
 
 div#pages {
 float:right;
 padding-right:8px;
 white-space: nowrap;
+margin-top: 10px;
 }
 
 div#pages ul{
@@ -86,7 +86,7 @@ margin:3px;
 padding:2px 5px;
 list-style-type: none;
 float:left;
-background:#dcd9d4;
+background:#ffffff;
 color:#303030;
 border:1px #dcd9d4 solid;
 white-space: nowrap;
@@ -101,7 +101,7 @@ border:1px #dcd9d4 solid;
 
 div#pages li.pbutton{
 color:#303030;
-background-color:#dcd9d4;
+background-color: #ffffff;;
 padding:3px 5px 1px 5px;
 white-space: nowrap;
 border:1px #dcd9d4 solid;
