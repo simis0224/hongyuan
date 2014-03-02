@@ -1,8 +1,8 @@
 <?php
 
 /*
-	[²å¼þÃû³Æ] ²úÆ·¼ìË÷
-	[ÊÊÓÃ·¶Î§] ·ÖÀà¼ìË÷Ò³
+	[插件名称] 产品检索
+	[适用范围] 分类检索页
 */ 
 
 
@@ -22,7 +22,7 @@ function ProductQuery(){
 	$cutbody=$GLOBALS["PLUSVARS"]["cutbody"];
 	
 
-	//µØÖ·À¸²ÎÊý
+	//地址栏参数
 	if(strstr($_SERVER["QUERY_STRING"],".html")){
 		$Arr=explode(".html",$_SERVER["QUERY_STRING"]);
 		$catid=$Arr[0];
@@ -59,7 +59,7 @@ function ProductQuery(){
 
 
 
-	//Ä£°æ½âÊÍ
+	//模版解释
 	$Temp=LoadTemp($tempname);
 	$TempArr=SplitTblTemp($Temp);
 
@@ -168,7 +168,7 @@ function ProductQuery(){
 		$cat=$tsql->f('cat');
 		}
 		
-		//²ÎÊýÁÐ
+		//参数列
 		$propstr="";
 
 		$i=1;
