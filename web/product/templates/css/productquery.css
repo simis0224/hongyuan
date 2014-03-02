@@ -9,6 +9,10 @@ border: 1px solid #bfbfbf;
 padding:10px;
 }
 
+div#categoryname h1#catname{
+padding-left: 2px;
+}
+
 div#productquery div.fang{
 margin-bottom: 12px;
 }

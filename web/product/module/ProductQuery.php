@@ -1,8 +1,8 @@
 <?php
 
 /*
-	[²å¼þÃû³Æ] ²úÆ·¼ìË÷
-	[ÊÊÓÃ·¶Î§] ·ÖÀà¼ìË÷Ò³
+	[Â²Ã¥Â¼Ã¾ÃƒÃ»Â³Ã†] Â²ÃºÃ†Â·Â¼Ã¬Ã‹Ã·
+	[ÃŠÃŠÃ“ÃƒÂ·Â¶ÃŽÂ§] Â·Ã–Ã€Ã Â¼Ã¬Ã‹Ã·Ã’Â³
 */ 
 
 
@@ -22,14 +22,21 @@ function ProductQuery(){
 	$cutbody=$GLOBALS["PLUSVARS"]["cutbody"];
 	
 
-	//µØÖ·À¸²ÎÊý
+	//ÂµÃ˜Ã–Â·Ã€Â¸Â²ÃŽÃŠÃ½
 	if(strstr($_SERVER["QUERY_STRING"],".html")){
 		$Arr=explode(".html",$_SERVER["QUERY_STRING"]);
 		$catid=$Arr[0];
-	}elseif($_GET["catid"]>0){
-		$catid=$_GET["catid"];
-	}else{
+	} else{
 		$catid=0;
+	}
+	
+	if($catid == 0) {
+		$catname = "æ‰€æœ‰å•†å“";
+	} else {
+		$msql->query("select * from {P}_product_cat where catid='$catid'");
+		while($msql->next_record()){
+			$catname=$msql->f('cat');
+		}
 	}
 
 	$key=$_GET["key"];
@@ -52,7 +59,7 @@ function ProductQuery(){
 
 
 
-	//Ä£°æ½âÊÍ
+	//Ã„Â£Â°Ã¦Â½Ã¢ÃŠÃ
 	$Temp=LoadTemp($tempname);
 	$TempArr=SplitTblTemp($Temp);
 
@@ -161,7 +168,7 @@ function ProductQuery(){
 		$cat=$tsql->f('cat');
 		}
 		
-		//²ÎÊýÁÐ
+		//Â²ÃŽÃŠÃ½ÃÃ
 		$propstr="";
 
 		$i=1;
@@ -206,6 +213,8 @@ function ProductQuery(){
 	$str.=$TempArr["end"];
 
 	$pagesinfo=$pages->ShowNow();
+	
+
 
 	$var=array (
 	'fittype' => $fittype,
@@ -215,7 +224,8 @@ function ProductQuery(){
 	'pagesshownum' => $pagesinfo["shownum"],
 	'pagesfrom' => $pagesinfo["from"],
 	'pagesto' => $pagesinfo["to"],
-	'totalnums' => $totalnums
+	'totalnums' => $totalnums,
+	'catname' => $catname
 	);
 
 	$str=ShowTplTemp($str,$var);
